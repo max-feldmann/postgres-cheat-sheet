@@ -3,6 +3,12 @@
 
 ## Terminal Commands
 
-### Create a Database
+### Manage Databases
+
+Create a new Database:
 
 `sudo -u postgres createdb [_DBNAME_]`
+
+Delete an existing Database:
+
+`sudo -u postgres dropdb _DBNAME_`
