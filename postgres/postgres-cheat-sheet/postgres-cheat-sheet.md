@@ -5,4 +5,4 @@
 
 ### Create a Database
 
-sudo -u postgres createdb [_DBNAME_]
+`sudo -u postgres createdb [_DBNAME_]`
