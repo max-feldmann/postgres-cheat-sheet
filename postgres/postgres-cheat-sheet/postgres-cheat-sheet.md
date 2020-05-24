@@ -35,24 +35,25 @@ User "psql" to enter postgres prompt with standard postgres user.
 
 ## Postgres Prompts
 
-Leaving Postgres Command Line
+### LEAVING POSTGRES Command Line
 
 `\q`
 
-Create a Database
+### CREATE a Database
 
 `CREATE DATABASE [Databasename];`
 
-Connect to Database
+### CONNECT to Database
 Run the Psql Program giving it the name of the DB we want to connect to.
 
 `psql [Databasename]`
 
-List the tables
+### LIST the tables
 
 `\d`
 
-DESCRIBE a single table
+### DESCRIBE a single table
 
 `\d [Tablename]`
 
+### LIST the data bases
