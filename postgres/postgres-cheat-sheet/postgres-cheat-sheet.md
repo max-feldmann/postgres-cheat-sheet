@@ -19,7 +19,27 @@
 
 The command below shows meta and status information about all PostgreSQL clusters, including the Postgres version, owners, online/offline status and the directories, where the data and log files are stored.
 
-`pg_lscluster`
+`pg_lsclusters`
+
+#### (Re)Start a Cluster
+
+Sometimes you will get an error-message like that:
+
+`psql: could not connect to server: No such file or directory
+        Is the server running locally and accepting
+        connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"`
+
+It basically means, that the cluster, you want to work with, is down and needs to be started.
+
+`pg_lsclusters` wil show you which cluster is down and needs to be started.
+
+Then go
+
+`sudo pg_ctlcluster <version> <cluster> <action>`
+
+For example
+
+`sudo pg_ctlcluster 10 main start`
 
 #### Create a New Postgres User
 
